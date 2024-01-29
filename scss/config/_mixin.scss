@@ -1,0 +1,82 @@
+//  ------------------------------------
+//   MediaScreen指定
+//  ------------------------------------
+
+$site: 1440px;
+$pc: 1180px; //inner Size
+$tab: 768px; // TABLET (基本ここ)
+$sp: 480px; // SP
+$dir: '../';
+@mixin mqd($query) {
+    @media screen and (max-width: $query) {
+        @content;
+    }
+}
+
+@mixin mqu($query) {
+    @media screen and (min-width: $query + 1px) {
+        @content;
+    }
+}
+
+@mixin font-min{
+    font-family: 'Zen Old Mincho', serif;
+    font-weight: 400;
+}
+
+@mixin font-go{
+    font-family: 'Zen Kaku Gothic New', serif;
+    font-weight: 400;
+}
+
+@mixin gap($gap:0px, $item:1){
+  width: calc((100% / #{$item}) - ((#{$gap} * (#{$item} - 1)) / #{$item}));
+}
+
+
+@mixin hovernav(){
+    .link__list{
+        width: 100%;
+        background-color: #d9dada;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 64px;
+        position: absolute;
+        transform: translate(-50%,-0%);
+        top: 98%;
+        left: 50%;
+        z-index: 10;
+        padding: 15px 0;
+        &--item{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            h4{
+                width: 100%;
+                font-size: 18px;
+                margin-bottom: 16px;
+                a{
+                    transition: 0.3s;
+                    color: #000;
+                    &:hover{
+                        color: rgb(22, 126, 245);
+                    }
+                }
+            }
+            h5{
+                width: 100%;
+                font-size: 14px;
+                margin-bottom: 16px;
+                a{
+                    transition: 0.3s;
+                    color: #000;
+                    &:hover{
+                        color: rgb(22, 126, 245);
+                    }
+                }
+            }
+        }
+    }
+}

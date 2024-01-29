@@ -6,89 +6,363 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+        <link href="./css/main.css" rel="stylesheet" >
 
         <title>Hello, world!</title>
     </head>
     <body>
-        <header class="">
-            
-        </header>
+        <header class="header-nav">
+            <button class="slideout__trigger-mobile-menu js-slideout-open text-left jyp__header__trigger sp" data-wau-slideout-target="mobile-navigation" data-slideout-direction="left" aria-label="Open navigation" tabindex="0" type="button" name="button" aria-expanded="false">
+                <span class="jyp__header__top"></span>
+                <span class="jyp__header__middle"></span>
+                <span class="jyp__header__bottom"></span>
+            </button>
+            <div class="header-nav__logo">
+                <img class="img" src="./img/header/logo/lavoro-logo.png" alt="">
+            </div>
 
+            <div class="header-nav__pc">
+                <div class="link">
+                    <p class="link__title">
+                        NEWS
+                    </p>
+                </div>
+
+                <div class="link link1">
+                    <p class="link__title">
+                        ARTIST
+                        <img class="link__title--icon" src="./img/header/icon/arrow.png" alt="">
+                    </p>
+
+                    <ul class="link__list">
+                        <li class="link__list--item">
+                            <h4>
+                                <a href="/collections/jyp-official-goods">JYP JAPAN OFFICIAL GOODS</a>
+                            </h4>
+                        </li>
+                        <li class="link__list--item">
+                            <h4>
+                                <a href="/collections/j-y-park-official-goods">J.Y. Park</a>
+                            </h4>
+                        </li>
+                        <li class="link__list--item">
+                            <h4>
+                                <a href="/collections/2pm-official-goods">2PM</a>
+                            </h4>
+
+                            <h4>
+                                <a href="/collections/jun-k-from-2pm">Jun. K (From 2PM)</a>
+                            </h4>
+
+                            <h4>
+                                <a href="/collections/wooyoung-from-2pm">NICHKHUN (From 2PM)</a>
+                            </h4>
+
+                            <h4>
+                                <a href="/collections/wooyoung-from-2pm">WOOYOUNG (From 2PM)</a>
+                            </h4>
+
+                            <h4>
+                                <a href="/collections/junho-from-2pm">Lee Junho</a>
+                            </h4>
+                        </li>
+                        <li class="link__list--item">
+                            <h4>
+                                <a href="/collections/twice-official-goods">TWICE</a>
+                            </h4>
+
+                            <h4>
+                                <a href="/collections/stray-kids-official-goods">Stray Kids</a>
+                            </h4>
+
+                            <h4>
+                                <a href="/collections/itzy-official-goods">ITZY</a>
+                            </h4>
+
+                            <h4>
+                                <a href="/collections/niziu-official-goods">NiziU</a>
+                            </h4>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="link link2">
+                    <p class="link__title">
+                        ITEM
+                        <img class="link__title--icon" src="./img/header/icon/arrow.png" alt="">
+                    </p>
+                    <ul class="link__list">
+                        <li class="link__list--item">
+                            <h4>
+                                <a href="/collections/jyp-official-goods">FASHION</a>
+                            </h4>
+                            <h5>
+                                <a href="">PENLIGHT</a>
+                            </h5>
+                        </li>
+                        <li class="link__list--item">
+                            <h4>
+                                <a href="/collections/j-y-park-official-goods">FASSION</a>
+                            </h4>
+                            <h5>
+                                <a href="">TOPS</a>
+                            </h5>
+                            <h5>
+                                <a href="">HAT</a>
+                            </h5>
+                            <h5>
+                                <a href="">BAG</a>
+                            </h5>
+                            <h5>
+                                <a href="">OTHER</a>
+                            </h5>
+                        </li>
+                        <li class="link__list--item">
+                            <h4>
+                                <a href="/collections/2pm-official-goods">ACCESSORIES</a>
+                            </h4>
+
+                            <h5>
+                                <a href="">KEY HOLDER/PIN BADGE</a>
+                            </h5>
+                            <h5>
+                                <a href="">BAG CHARM</a>
+                            </h5>
+                            <h5>
+                                <a href="">POUCH</a>
+                            </h5>
+                            <h5>
+                                <a href="">JEWELRY</a>
+                            </h5>
+                        </li>
+                        <li class="link__list--item">
+                            <h4>
+                                <a href="/collections/twice-official-goods">PHOTO</a>
+                            </h4>
+
+                            <h5>
+                                <a href="">IMAGE PICKET</a>
+                            </h5>
+                            <h5>
+                                <a href="">PHOTO BADGE</a>
+                            </h5>
+                            <h5>
+                                <a href="">ACRYLIC STAND</a>
+                            </h5>
+                            <h5>
+                                <a href="">TRADING CARD</a>
+                            </h5>
+                            <h5>
+                                <a href="">PHOTO CARD SET</a>
+                            </h5>
+                            <h5>
+                                <a href="">PHOTO BOOK</a>
+                            </h5>
+                            <h5>
+                                <a href="">OTHER</a>
+                            </h5>
+                        </li>
+                        <li class="link__list--item">
+                            <h4>
+                                <a href="/collections/twice-official-goods">STATIONERY</a>
+                            </h4>
+                        </li>
+                        <li class="link__list--item">
+                            <h4>
+                                <a href="/collections/twice-official-goods">DAILY</a>
+                            </h4>
+
+                            <h5>
+                                <a href="">text</a>
+                            </h5>
+                            <h5>
+                                <a href="">text</a>
+                            </h5>
+                            <h5>
+                                <a href="">text</a>
+                            </h5>
+                            <h5>
+                                <a href="">text</a>
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="link link3">
+                    <p class="link__title">
+                        CHARACTER
+                        <img class="link__title--icon" src="./img/header/icon/arrow.png" alt="">
+                    </p>
+                    <ul class="link__list">
+                        <li class="link__list--item">
+                            <h4>
+                                <a href="/collections/jyp-official-goods">TTEOK GO</a>
+                            </h4>
+                            <h4>
+                                <a href="/collections/j-y-park-official-goods">ZooPM</a>
+                            </h4>
+                            <h4>
+                                <a href="/collections/j-y-park-official-goods">TWICE LOVELYS</a>
+                            </h4>
+                            <h4>
+                                <a href="/collections/j-y-park-official-goods">PETIT TWICE</a>
+                            </h4>
+                        </li>
+                        <li class="link__list--item">
+                            <h4>
+                                <a href="/collections/j-y-park-official-goods">SKZOO</a>
+                            </h4>
+                            <h4>
+                                <a href="/collections/j-y-park-official-goods">NIZOO</a>
+                            </h4>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="link">
+                    <p class="link__title">
+                        ARCHIVE
+                    </p>
+                </div>
+            </div>
+
+            <div class="header-nav__content">
+                <button class="button">
+                    <img class="img user" src="./img/header/icon/user.png" alt="">
+                </button>
+                <button class="button">
+                    <img class="img search" src="./img/header/icon/search.png" alt="">
+                </button>
+                <button class="button">
+                    <img class="img cart" src="./img/header/icon/cart.png" alt="">
+                </button>
+            </div>
+        </header>
 
         <section class="O-kv">
             <!-- KV -->
+            <!-- Sliderを包むコンテナ要素 -->
+            <div id="kv" class="swiper">
+                <!-- スライド要素を包む要素 -->
+                <div class="swiper-wrapper">
+                    <!-- 各スライド -->
+                    <div class="swiper-slide slide1">
+                        <p>slide1</p>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <p>slide2</p>
+                    </div>
+                    <div class="swiper-slide slide3">
+                    <p>slide3</p>
+                    </div>
+                    <div class="swiper-slide slide1">
+                        <p>slide1</p>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <p>slide2</p>
+                    </div>
+                    <div class="swiper-slide slide3">
+                    <p>slide3</p>
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper-pagination"></div>
         </section>
 
-        <section class="O-information">
+        <section class="O-information pt-3">
             <div class="O-information__Title">
                 <!-- INFORMATIONタイトル -->
-                
+
                 <h2 class="text-center">INFORMATION</h2>
-                <p class="text-center text-danger ">サンプルサンプルサンプ</p>
-                <p class="text-center text-danger">サンプルサンプルサンプルサンプル</p>
-        
+                <p class="text-center text-danger pt-3">サンプルサンプルサンプ</p>
+                <p class="text-center text-danger pt-2">サンプルサンプルサンプルサンプル</p>
 
             </div>
 
-            <div class="O-information__Body border border-dark">
-                <div class="O-information__body--Artist">
+            <div class="O-information__Body border border-dark mt-4 container-fluid container-md p-0">
+                <div class="O-information__Body--Artist">
                     <!-- ARTISTタイトル -->
-                    <div class="w-100 p-3">
-                        <h3 class="text-center bg-dark text-light">ARTIST</h3>
+                    <div class="w-100">
+                        <h2 class="Artist-title text-center text-light">ARTIST</h2>
                     </div>
                 </div>
-                <div class="O-information__Body--Cate container">
+                <div class="O-information__Body--Cate container-fluid container-md text-center">
                     <!-- ARTISTカテゴリーボタン -->
-                    <div class="row">
-                        <div class="col-8 border border-dark">JYP JAPAN OFFICIAL GOODS</div>
-                        <div class="col-2 border border-dark">J.Y. Park</div>
-                        <div class="col-2 border border-dark">2PM</div>
+                    <div class="flex d-md-none">
+                        <p class="flex__w-100 border border-dark">JYP JAPAN OFFICIAL GOODS</p>
                     </div>
-                    <div class="row">
-                        <div class="col border border-dark">TWICE</div>
-                        <div class="col border border-dark">Stray Kids</div>
-                        <div class="col border border-dark">ITZY</div>
-                        <div class="col border border-dark">NiziU</div>
+                    <div class="flex">
+                        <p class="flex__w-50 d-none d-sm-block border border-dark">JYP JAPAN OFFICIAL GOODS</p>
+                        <p class="border border-dark">J.Y. Park</p>
+                        <p class="border border-dark">2PM</p>
+
+                        <p class="border border-dark">TWICE</p>
+                        <p class="border border-dark">Stray Kids</p>
+                        <p class="border border-dark">ITZY</p>
+                        <p class="border border-dark">NiziU</p>
                     </div>
                 </div>
 
-                <div class="O-information__Body--Collection container">
+                <div class="O-information__Body--Collection container-fluid container-md">
                     <!-- COLLECTIONボタンなど -->
-                    <h4 class="text-center">COLLECTION</h4>
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="./img/jypark_cl_270x375.webp" alt="">
+                    <h2 class="text-center Collection-title">COLLECTION</h2>
+                    <!-- Sliderを包むコンテナ要素 -->
+                    <div class="Collection-swiper">
+                        <div id="loop" class="swiper">
+                            <!-- スライド要素を包む要素 -->
+                            <div class="swiper-wrapper">
+                            <!-- 各スライド -->
+                                <div class="swiper-slide slide-items">
+                                    <img src="./img/collection/items.webp" alt="">
+                                </div>
+                                <div class="swiper-slide slide-items">
+                                    <img src="./img/collection/items.webp" alt="">
+                                </div>
+                                <div class="swiper-slide slide-items">
+                                    <img src="./img/collection/items.webp" alt="">
+                                </div>
+    
+                                <div class="swiper-slide slide-items">
+                                    <img src="./img/collection/items.webp" alt="">
+                                </div>
+                                <div class="swiper-slide slide-items">
+                                    <img src="./img/collection/items.webp" alt="">
+                                </div>
+                                <div class="swiper-slide slide-items">
+                                    <img src="./img/collection/items.webp" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-4">
-                            <img src="./img/jypark_cl_270x375.webp" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img src="./img/jypark_cl_270x375.webp" alt="">
-                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
 
-                <div class="O-information__Body--Items container">
+                <div class="O-information__Body--Items container-fluid container-md">
                     <!-- 商品一覧 -->
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                        <img src="./img/4571519994075_01_360x.webp" alt="">
-                    </div>
-                    <div class="col-3">
-                        <img src="./img/4571519994075_01_360x.webp" alt="">
-                    </div>
-                    <div class="col-3">
-                        <img src="./img/4571519994075_01_360x.webp" alt="">
-                    </div>
-                    <div class="col-3">
-                        <img src="./img/4571519994075_01_360x.webp" alt="">
-                    </div>
-                
+
                     <div class="row">
                         <div class="col-3">
                             <img src="./img/4571519994075_01_360x.webp" alt="">
+
+                            <div>
+                                <p>Stray Kids OFFICIAL LIGHT STICK VER.2</p>
+                                <p><span>¥</span>7,500</p>
+                            </div>
+
+                            <div>
+                                <p>SOLD OUT</p>
+                                <p>OUT OF TERM</p>
+                            </div>
                         </div>
                         <div class="col-3">
                             <img src="./img/4571519994075_01_360x.webp" alt="">
@@ -99,19 +373,30 @@
                         <div class="col-3">
                             <img src="./img/4571519994075_01_360x.webp" alt="">
                         </div>
+
+                        <div class="col-3">
+                            <img src="./img/4571519994075_01_360x.webp" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="./img/4571519994075_01_360x.webp" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="./img/4571519994075_01_360x.webp" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="./img/4571519994075_01_360x.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="O-information__Body--Viewmore text-center">
+                        <!-- 一番下のviewmoreボタン -->
+                        
+                        <button type="button" type="submit" class="btn btn-dark btn btn-primary">
+                            <h5>J.Y ParkVIEW MORE</h5>
+                        </button>
 
                     </div>
-                <div class="O-information__Body--Viewmore text-center">
-                    <!-- 一番下のviewmoreボタン -->
-                    
-                    <button type="button" type="submit" class="btn btn-dark btn btn-primary">
-                        <h5>J.Y ParkVIEW MORE</h5>
 
-                    </button>
-                
-                
                 </div>
-            </div>
         </section>
 
         <section class="O-Newarrival">
@@ -125,18 +410,107 @@
         </section>
 
 
-        <footer>
+        <footer class="jyp__footer">
+
+            <div class="jyp__footer__logo">
+                <a href=""><img src="//jypj-store.com/cdn/shop/files/JYP_JAPAN_ONLINE_STORE_3x_b7090e8a-64a8-4e18-9660-c8415de2fdbc_450x.png.jpg?v=1649926176" alt="ロゴ画像"></a>
+            </div>
+
+            <div class="jyp__footer__column">
+                <div class="jyp__footer__site">
+            
+                    <div class="jyp__footer__item">
+                        <p>official <br class="pc">site</p>
+                    </div>
+                
+                    <div class="jyp__footer__item">
+                    <a href="http://www.2pmjapan.com/" target="_blank"><img src="//jypj-store.com/cdn/shop/files/pc01_fa00be5f-4b6e-48d5-9d12-16f1b88a2124_500x.png.jpg?v=1622800546" alt="アーティストのロゴ画像"></a>
+                    </div>
+                
+                    <div class="jyp__footer__item">
+                    <a href="https://www.twicejapan.com/" target="_blank"><img src="//jypj-store.com/cdn/shop/files/pc03_8d0153de-e36d-4042-99f6-6f1148a167e5_500x.png.jpg?v=1649972028" alt="アーティストのロゴ画像"></a>
+                    </div>
+                
+                    <div class="jyp__footer__item">
+                    <a href="https://www.straykidsjapan.com/" target="_blank"><img src="//jypj-store.com/cdn/shop/files/pc05_6ac9b09a-c2f0-4046-8ffa-59203a48e9b5_500x.png.jpg?v=1622800612" alt="アーティストのロゴ画像"></a>
+                    </div>
+                
+                    <div class="jyp__footer__item">
+                    <a href="https://www.itzyjapan.com/" target="_blank"><img src="//jypj-store.com/cdn/shop/files/itzy_ofs_500x.png.jpg?v=1635419343" alt="アーティストのロゴ画像"></a>
+                    </div>
+                
+                    <div class="jyp__footer__item">
+                    <a href="https://niziu.com/s/n123/?ima=2111" target="_blank"><img src="//jypj-store.com/cdn/shop/files/pc07_24820d63-ca35-4a08-80a1-6fa40c6e3624_500x.png.jpg?v=1622800655" alt="アーティストのロゴ画像"></a>
+                    </div>
+                
+                </div>
+                <div class="jyp__footer__site">
+            
+                    <div class="jyp__footer__item">
+                        <p>official <br class="pc">site</p>
+                    </div>
+                
+                    <div class="jyp__footer__item">
+                    <a href="http://www.2pmjapan.com/" target="_blank"><img src="//jypj-store.com/cdn/shop/files/pc01_fa00be5f-4b6e-48d5-9d12-16f1b88a2124_500x.png.jpg?v=1622800546" alt="アーティストのロゴ画像"></a>
+                    </div>
+                
+                    <div class="jyp__footer__item">
+                    <a href="https://www.twicejapan.com/" target="_blank"><img src="//jypj-store.com/cdn/shop/files/pc03_8d0153de-e36d-4042-99f6-6f1148a167e5_500x.png.jpg?v=1649972028" alt="アーティストのロゴ画像"></a>
+                    </div>
+                
+                    <div class="jyp__footer__item">
+                    <a href="https://www.straykidsjapan.com/" target="_blank"><img src="//jypj-store.com/cdn/shop/files/pc05_6ac9b09a-c2f0-4046-8ffa-59203a48e9b5_500x.png.jpg?v=1622800612" alt="アーティストのロゴ画像"></a>
+                    </div>
+                
+                    <div class="jyp__footer__item">
+                    <a href="https://www.itzyjapan.com/" target="_blank"><img src="//jypj-store.com/cdn/shop/files/itzy_ofs_500x.png.jpg?v=1635419343" alt="アーティストのロゴ画像"></a>
+                    </div>
+                
+                    <div class="jyp__footer__item">
+                    <a href="https://niziu.com/s/n123/?ima=2111" target="_blank"><img src="//jypj-store.com/cdn/shop/files/pc07_24820d63-ca35-4a08-80a1-6fa40c6e3624_500x.png.jpg?v=1622800655" alt="アーティストのロゴ画像"></a>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="jyp__footer__row">
+                <!-- 左側の列 -->
+                <div class="jyp__footer__row--left">
+                
+                <div class="jyp__footer__link"><a href="/blogs/info">INFO</a></div>
+                
+                <div class="jyp__footer__link"><a href="/pages/terms-conditions">TERMS &amp; CONDITIONS</a></div>
+                
+                <div class="jyp__footer__link"><a href="/pages/privacy-policy">PRIVACY POLICY</a></div>
+                
+                <div class="jyp__footer__link"><a href="/pages/act-on-specified-commercial-transactions">ACT ON SPECIFIED COMMERCIAL TRANSACTIONS</a></div>
+                
+                </div>
+                <!-- 右側の列 -->
+                <div class="jyp__footer__row--right">
+                
+                <div class="jyp__footer__link"><a href="/pages/help">GUIDE</a></div>
+                
+                <div class="jyp__footer__link"><a href="/pages/faq">FAQ</a></div>
+                
+                <div class="jyp__footer__link"><a href="/pages/contact-us">CONTACT US</a></div>
+                
+                </div>
+            </div>
 
         </footer>
         <!-- Optional JavaScript; choose one of the two! -->
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <!-- Option 2: Separate Popper and Bootstrap JS -->
         <!--
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         -->
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="./js/main.js"></script>
     </body>
 </html>

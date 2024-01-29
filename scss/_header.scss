@@ -1,0 +1,129 @@
+@use "./config/mixin" as mixin;
+
+.header-nav{
+    padding-left: 50px;
+    padding-right: 55px;
+    height: 90px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    color: #FFF;
+    @media screen and (max-width: 980px) {
+        justify-content: flex-start;
+        padding-left: 10px;
+        padding-right: 55px;
+        gap: 16px;
+    }
+    .jyp__header__trigger {
+        display: none;
+        @media screen and (max-width: 980px) {
+            height: 70%;
+            width: 70px;
+            background-color: #000;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+            transition: 0.5s;
+            display: block;
+        }
+        .jyp__header__top, .jyp__header__middle, .jyp__header__bottom {
+            @media screen and (max-width: 980px) {
+                background-color: #fff;
+                border: none;
+                height: 2px;
+                width: 22px;
+                position: absolute;
+                top: 35%;
+                left: 25px;
+            }
+        }
+        .jyp__header__middle {
+            @media screen and (max-width: 980px) {
+                top: 50%;
+            }
+        }
+        .jyp__header__bottom {
+            @media screen and (max-width: 980px) {
+                top: 65%;
+            }
+        }
+    }
+    &__logo{
+        width: 165px;
+        .img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    &__pc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        height: 100%;
+        @media screen and (max-width: 980px) {
+            display: none;
+        }
+        .link{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &__title{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 8px;
+                font-size: 18px;
+                &--icon{
+                    transform: translate(0,2px);
+                    width: 11px;
+                    height: 11px;
+                    display: block;
+                }
+            }
+            &__list{
+                display: none;
+            }
+        }
+        .link1{
+            &:hover{
+                @include mixin.hovernav();
+            }
+        }
+        .link2{
+            &:hover{
+                @include mixin.hovernav();
+            }
+        }
+        .link3{
+            &:hover{
+                @include mixin.hovernav();
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        @media screen and (max-width: 980px) {
+            margin-left: auto;
+        }
+        .button{
+            width: 20px;
+            height: 20px;
+            .img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+

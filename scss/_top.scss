@@ -1,0 +1,202 @@
+@use "./config/mixin" as mixin;
+
+.O-kv{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 9;
+    .swiper {
+        /*スライダーの幅と高さを調整*/
+        width: 100%;
+        height: 38vw;
+    }
+    
+    .swiper-slide {
+    /*スライド要素の幅と高さを調整*/
+    width: 100%;
+    height: 99%;
+    
+    /*テキストの位置調整*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /*テキストの色と太さを指定*/
+    color: #fff;
+    font-weight: bold;
+
+    box-shadow: 0 0 8px gray;
+    }
+    .swiper-slide-prev{
+        scale: 0.8;
+        transform: translate(12%, 0);
+        position: relative;
+        ::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.527);
+        }
+    }
+    .swiper-slide-next{
+        scale: 0.8;
+        transform: translate(-12%, 0);
+        filter: drop-shadow(0 3px 5px rgba(0,0,0,0.4));
+        ::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.527);
+        }
+    }
+    .swiper-button-prev:after{
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        transform: translate(30px,0);
+    }
+    .swiper-button-next:after{
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        transform: translate(-30px,0);
+    }
+    
+    /*各スライドの背景色の設定*/
+    .slide1 {
+    background-color: #88acbd;
+    }
+    
+    .slide2 {
+    background-color: #99cb1f;
+    }
+    
+    .slide3 {
+    background-color: #e43a47;
+    }
+    /* ページネーション */
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        transform: translate(0,3rem);
+    }
+}
+
+.O-information{
+    &__Title{
+        h2{
+            font-size: 35px;
+            letter-spacing: 0.1em;
+        }
+    }
+    &__Body{
+        &--Artist{
+            .Artist-title{
+                font-size: 50px;
+                background-color: #000;
+                padding: 10px 0;
+                letter-spacing: 0.1em;
+            }
+        }
+        &--Cate{
+            padding: 20px 75px 15px;
+            @media screen and (max-width: 768px) {
+                padding: 3% 4.13% 0;
+            }
+            .flex{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.5%;
+                p{
+                    width: 23.5%;
+                    font-size: 15px;
+                    padding: 13px 0;
+                    margin-bottom: 1.5%;
+                    @media screen and (max-width: 576px) {
+                        @include mixin.gap(10px,2);
+                    }
+                }
+                &__w-50{
+                    width: 48.5% !important;
+                }
+                &__w-100{
+                    display: none;
+                    @media screen and (max-width: 576px) {
+                        display: block;
+                        width: 99.5% !important;
+                    }
+                }
+            }
+            .gaps{
+                gap: 10px;
+            }
+        }
+
+        &--Collection {
+            padding: 20px 75px 15px;
+            @media screen and (max-width: 768px) {
+                padding: 3% 4.13% 0;
+            }
+            .Collection-title{
+                font-size: 35px;
+                letter-spacing: 0.1em;
+            }
+
+            .Collection-swiper{
+                position: relative;
+                margin: 40px 0 0;
+                #loop{
+                    .swiper-wrapper{
+                        align-items: center;
+                        .slide-items{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img{
+                                width: 85%;
+                                @media screen and (max-width: 768px) {
+                                    width: 90%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .swiper-button-prev{
+                    left: -2%;
+                    @media screen and (max-width: 768px) {
+                        left: 2%;
+                    }
+                }
+                .swiper-button-prev:after{
+                    font-size: 20px;
+                    color: #000;
+                    font-weight: bold;
+                }
+                .swiper-button-next{
+                    right: -2%;
+                    @media screen and (max-width: 768px) {
+                        right: 2%;
+                    }
+                }
+                .swiper-button-next:after{
+                    font-size: 20px;
+                    color: #000;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &--Items{
+            padding: 20px 75px 15px;
+            @media screen and (max-width: 768px) {
+                padding: 3% 4.13% 0;
+            }
+        }
+    }
+}
